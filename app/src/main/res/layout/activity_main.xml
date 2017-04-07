@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context="com.example.user.scorekeeperapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/linearLayout1"
+            android:layout_alignTop="@+id/linearLayout1"
+            android:adjustViewBounds="true"
+            android:alpha="0.9"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textTeam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/teamA" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    style="@style/textScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0" />
+
+                <Button
+                    style="@style/btnApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnHeight"
+                    android:drawableLeft="@drawable/ball"
+                    android:onClick="addGoalTeamA"
+                    android:text="@string/goal" />
+
+                <Button
+                    style="@style/btnApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnHeight"
+                    android:drawableLeft="@drawable/foul"
+                    android:onClick="addFoulTeamA"
+                    android:text="@string/foul" />
+
+                <TextView
+                    android:id="@+id/team_a_foul"
+                    style="@style/textFoul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textTeam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/teamB" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    style="@style/textScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0" />
+
+                <Button
+                    style="@style/btnApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnHeight"
+                    android:drawableLeft="@drawable/ball"
+                    android:onClick="addGoalTeamB"
+                    android:text="@string/goal" />
+
+                <Button
+                    android:id="@+id/btnFoul"
+                    style="@style/btnApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnHeight"
+                    android:drawableLeft="@drawable/foul"
+                    android:onClick="addFoulTeamB"
+                    android:text="@string/foul" />
+
+                <TextView
+                    android:id="@+id/team_b_foul"
+                    style="@style/textFoul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/resetBtn"
+            style="@style/btnApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:onClick="resetScore"
+            android:text="@string/reset" />
+    </RelativeLayout>
+</ScrollView>

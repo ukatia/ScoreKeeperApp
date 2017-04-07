@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ScoreKeeperApp</string>
+    <string name="title">Soccer Score</string>
+    <string name="teamA">Team A</string>
+    <string name="teamB">Team B</string>
+    <string name="goal">Goal</string>
+    <string name="foul">Foul</string>
+    <string name="reset">Reset</string>
+</resources>

@@ -1,0 +1,38 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/btnTextColor</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="textApp">
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/paddingText</item>
+    </style>
+
+    <style name="textTeam" parent="textApp">
+        <item name="android:textSize">@dimen/teamTextSize</item>
+    </style>
+
+    <style name="textScore" parent="textApp">
+        <item name="android:textSize">@dimen/scoreTextSize</item>
+    </style>
+
+    <style name="textFoul" parent="textApp">
+        <item name="android:textSize">@dimen/foulTextSize</item>
+    </style>
+
+    <style name="btnApp">
+        <item name="android:textColor">@color/btnTextColor</item>
+        <item name="android:layout_margin">@dimen/btnMargin</item>
+    </style>
+
+</resources>
